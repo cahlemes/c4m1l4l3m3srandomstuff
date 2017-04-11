@@ -11,7 +11,7 @@ public class PersonController {
 	@Autowired
 	private PersonRepository personRepository;
 	
-	@RequestMapping("/create")
+//	@RequestMapping("/create")
 	@ResponseBody
 	public String create(String firstName, String lastName) {
 		Person person = null;
@@ -24,7 +24,7 @@ public class PersonController {
 		return "Person succesfully created! (nome = " + person.getFirstName() + ")";
 	}
 
-	@RequestMapping("/delete")
+//	@RequestMapping("/delete")
 	@ResponseBody
 	public String delete(long id) {
 		try {
@@ -36,7 +36,7 @@ public class PersonController {
 		return "Person succesfully deleted!";
 	}
 	
-	@RequestMapping("/update")
+//	@RequestMapping("/update")
 	@ResponseBody
 	public String update(long id, String firstName, String lastName) {
 		try {
